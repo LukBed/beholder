@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lukbed.opticalanalyser.mvc.controllers.MenuPaneController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="newProjectMenuItem" mnemonicParsing="false" text="New project" />
+                  <MenuItem fx:id="openProjectMenuItem" mnemonicParsing="false" text="Open project" />
+                  <MenuItem fx:id="saveProjectMenuItem" mnemonicParsing="false" text="Save project" />
+                  <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Project">
+            <items>
+              <MenuItem fx:id="renameProjectMenuItem" mnemonicParsing="false" text="Rename project" />
+                  <MenuItem fx:id="addLightFunctionMenuItem" mnemonicParsing="false" text="Add light function" />
+                  <MenuItem mnemonicParsing="false" text="Rename light function" />
+                  <MenuItem mnemonicParsing="false" text="Delete light function" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="addMeasurementMenuItem" mnemonicParsing="false" text="Add measurement" />
+                  <MenuItem mnemonicParsing="false" text="Delete measurement" />
+                  <MenuItem mnemonicParsing="false" text="Clone measurement" />
+                  <MenuItem mnemonicParsing="false" text="Transfer measurement" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="addRegulationMenuItem" mnemonicParsing="false" text="Add regulation" />
+                  <MenuItem fx:id="loadDefaultRegulationsMenuItem" mnemonicParsing="false" text="Load default regulations" />
+                  <MenuItem mnemonicParsing="false" text="Delete regulation" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Measurement">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Add factor" />
+                  <MenuItem mnemonicParsing="false" text="Add translation" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Export to XLS" />
+                  <MenuItem mnemonicParsing="false" text="Export to PDF" />
+                  <MenuItem mnemonicParsing="false" text="Export to XLS" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="helpMenuItem" mnemonicParsing="false" text="Help" />
+                  <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
+                  <MenuItem fx:id="webpageMenuItem" mnemonicParsing="false" text="Webpage" />
+                  <MenuItem fx:id="contactMenuItem" mnemonicParsing="false" text="Contact" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

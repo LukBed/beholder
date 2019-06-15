@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lukbed.opticalanalyser.mvc.controllers.MainPaneController">
+   <children>
+      <VBox alignment="TOP_CENTER">
+         <children>
+            <fx:include fx:id="menuPane" source="menuPane.fxml" />
+            <fx:include fx:id="toolbarPane" source="toolbarPane.fxml" />
+            <HBox alignment="TOP_CENTER">
+               <children>
+                  <fx:include fx:id="panelPane" source="panelPane.fxml" />
+                  <VBox alignment="CENTER">
+                     <children>
+                        <fx:include fx:id="measurementPane" source="measurementPane.fxml" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <fx:include fx:id="footerPane" source="footerPane.fxml" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

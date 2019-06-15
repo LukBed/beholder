@@ -1,0 +1,1 @@
+Jeżeli lista pomiarów jest pusta to może dojść do zwrócenia wyjątku

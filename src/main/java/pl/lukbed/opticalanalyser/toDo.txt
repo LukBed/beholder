@@ -1,0 +1,39 @@
+Podzielić MainPaneController na podklasy ze wstrzykiwaniem zależności
+Zrobić klasę wyświetlającą okienka
+
+MainPaneController -> loadRegulation
+Przed wypuszczeniem aplikacji sprawdzić, czy ścieżka jest prawidłowa
+
+
+POMYSŁY NA ROZWÓJ APLIKACJI
+*wersje językowe
+*ulepszenie interfejs
+*izocandele
+*eksport raportów do pdfa, excela
+
+
+PHOTOMETRIC GRID
+    *można dodać inne sprawdzenia czy wartości tworzonego gridu są prawidłowe;
+    -ostrzeżenie, że krok pomiarowy jest różny
+    *przy tworzeniu z tablicy dodać sprawdzenie, czy długość wszystkich podtablic jest taka sama
+    -sprawdzenia, czy horyzontalne i wertykalne są ułożone po kolei
+
+    *co jeśli metoda getPoint zakończy się jakims błędem?
+
+    *dodać wyjątki do metody create
+
+    *poziom wyżej dodać obsługę wyjątków
+
+
+REGULATIONS
+    *obsługa "customowych" punktów - dodawanie do wymagań własnych wytycznych
+    *dodanie sprawdzania ECE i CoP
+    *Regulation.java
+        *dodać gettery i settery wraz ze sprawdzaniem warunku
+        * dodać wyjątki do metody checkGrid
+
+FUNCTIONS
+    *OpticalFileReader
+        *readRegulation
+            *dodać wyjątek - plik nie istnieje
+            * dodać wyjątek - punkt nie istnieje -> ma się grida fogowego i sprawdza wymagania turna to się wywala
